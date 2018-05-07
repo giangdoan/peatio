@@ -34,8 +34,8 @@ An open-source crypto currency exchange
 
 •Multi Server Support https://github.com/scatterp/peatio/blob/master/MultiServerReadme.md
 
-•Installer with minimal steps [![RELEASE]()(https://github.com/scatterp/peatio/blob/master/install1.sh)]
-wget https://raw.githubusercontent.com/scatterp/peatio/master/install1.sh
+•Installer with minimal steps [![RELEASE]()(https://github.com/giangdoan/peatio/blob/master/install1.sh)]
+wget https://raw.githubusercontent.com/giangdoan/peatio/master/install1.sh
 source install1.sh 
 
 NOTE: it is critical you launch this with "SOURCE" not "SH" not "BASH" etc
