@@ -34,9 +34,9 @@ An open-source crypto currency exchange
 
 •Multi Server Support https://github.com/scatterp/peatio/blob/master/MultiServerReadme.md
 
-•Installer with minimal steps [![RELEASE]()(https://github.com/giangdoan/peatio/blob/master/install1.sh)]
-wget https://raw.githubusercontent.com/giangdoan/peatio/master/install1.sh
-source install1.sh 
+•Installer with minimal steps [![RELEASE]()(https://github.com/giangdoan/peatio/blob/master/install.sh)]
+wget https://raw.githubusercontent.com/giangdoan/peatio/master/install.sh
+source install.sh 
 
 NOTE: it is critical you launch this with "SOURCE" not "SH" not "BASH" etc
 NOTE2: less than 4GB of ram you should disable the line that reads bitcoind or you wont have enough memory to launch the page
