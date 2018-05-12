@@ -59,14 +59,14 @@ sudo cp passenger.conf /etc/nginx/passenger.conf
 #echo "include  /etc/nginx/passenger.conf;" |sudo tee -a /etc/nginx/nginx.conf
 cp /etc/nginx/nginx.conf .
 sed -i '64i\passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;' nginx.conf
-sed -i '65i\passenger_ruby /home/deploy/.rbenv/shims/ruby;' nginx.conf
+sed -i '65i\passenger_ruby /home/zen/.rbenv/shims/ruby;' nginx.conf
 sudo cp nginx.conf /etc/nginx/nginx.conf
 echo "remaining steps 10"
 echo "export RAILS_ENV=production" >> ~/.bashrc
 source ~/.bashrc
 mkdir -p ~/peatio
 #git clone https://github.com/ctubio/Krypto-trading-bot.git ~/K
-git clone https://github.com/scatterp/peatio.git ~/peatio/current
+git clone https://github.com/giangdoan/peatio.git ~/peatio/current
 #git checkout testing01
 cd ~/peatio/current/
 pwd
@@ -85,7 +85,7 @@ sudo /etc/init.d/mysql start
 bundle exec rake db:setup
 bundle exec rake assets:precompile
 pwd
-#cd /home/deploy/K/
+#cd /home/zen/K/
 #pwd
 #make install
 #cd ..
@@ -95,7 +95,7 @@ pwd
 #gem install bundler
 #bundle install
 sudo rm /etc/nginx/sites-enabled/default
-sudo ln -s /home/deploy/peatio/current/config/nginx.conf /etc/nginx/conf.d/peatio.conf
+sudo ln -s /home/zen/peatio/current/config/nginx.conf /etc/nginx/conf.d/peatio.conf
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
 sudo apt-get install -y python-certbot-nginx
